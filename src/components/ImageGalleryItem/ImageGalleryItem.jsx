@@ -17,12 +17,6 @@ class ImageGalleryItem extends Component {
     showModal: false,
   };
 
-  toggleModal = () => {
-    this.setState(prevState => ({
-      showModal: !prevState.showModal,
-    }));
-  };
-
   render() {
     const { webformatURL, largeImageURL, tags } = this.props.image;
     const { showModal } = this.state;

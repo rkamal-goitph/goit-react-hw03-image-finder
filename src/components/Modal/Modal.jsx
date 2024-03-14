@@ -18,12 +18,6 @@ class Modal extends Component {
     window.removeEventListener('keydown', this.handleKeyDown);
   }
 
-  handleKeyDown = e => {
-    if (e.code === 'Escape') {
-      this.props.onClose();
-    }
-  };
-
   render() {
     const { image, tags } = this.props;
     return (
